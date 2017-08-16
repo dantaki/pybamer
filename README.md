@@ -28,7 +28,7 @@ Optional arguments:
 ```
 
 
-# Output
+## Output
 
 `$ pybamer -i NA12878.bam -o NA12878_stats.txt`
 
