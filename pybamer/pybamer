@@ -1,0 +1,3 @@
+#!/usr/bin/env python2
+from pybamer.core import main
+if __name__ == '__main__': main()
