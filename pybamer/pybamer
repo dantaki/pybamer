@@ -1,3 +1,3 @@
 #!/usr/bin/env python2
-from pybamer.core import main
+from pybamer.pybamer import main
 if __name__ == '__main__': main()
