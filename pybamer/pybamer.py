@@ -2,7 +2,6 @@
 import pysam 
 import os,argparse,sys
 from argparse import RawTextHelpFormatter
-from tqdm import tqdm
 from collections import OrderedDict
 import numpy as np
 class Arguments():
@@ -28,7 +27,7 @@ class Bam():
 			self.reads[x]={}
 			self.ref[x]=float(y)
 	def computeStats(self,Q,ofh):
-		for al in tqdm(self.bam.fetch(until_eof=True)):
+		for al in self.bam.fetch():
 			if (	al.cigartuples == None 
 				or al.is_unmapped 
 				or al.mapping_quality < Q 
